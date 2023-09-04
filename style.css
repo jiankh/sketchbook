@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    display: flex;
+    border: solid red;
+    flex-wrap: wrap;
+    width: 500px;
+    height:500px;
+
+}
+
+.pixel {
+    background-color: white;
+}
+
+.pixel:hover {
+    background-color: black;
+}
