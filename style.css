@@ -3,11 +3,23 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .title {
     display: flex;
     justify-content: center;
+    background-color: #1f2937;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #1f2937;
 }
 
 
@@ -17,12 +29,13 @@ body {
     justify-content: flex-start;
     gap: 100px;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 
 .screen {
     display: flex;
-    border: solid red;
+    border: solid #1f2937;;
     flex-wrap: wrap;
     width: 500px;
     height:500px;
@@ -50,3 +63,36 @@ body {
     background-color: black;
 }
 
+
+@keyframes rainbow-animation {
+    0% { background-color: red; } /* Starting color */
+    16% { background-color: orange; }
+    32% { background-color: yellow; }
+    48% { background-color: green; }
+    64% { background-color: blue; }
+    80% { background-color: indigo; }
+    100% { background-color: violet; } /* Ending color */
+}
+  
+.rainbow {
+    animation: rainbow-animation 0.5s linear infinite; 
+}
+
+.btn {
+    padding: 10px 30px;
+    font-family: inherit;
+    border: solid #1f2937
+}
+
+.btn:hover, select:hover {
+    cursor: pointer;
+}
+
+select {
+    text-align: center;
+    padding: 10px;
+    appearance: none;
+    padding-left: 2px;
+    font-family: inherit;
+    border: solid #1f2937
+}
