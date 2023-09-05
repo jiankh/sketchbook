@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    min-width: 100vh;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
